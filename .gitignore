@@ -1,0 +1,9 @@
+.DS_Store
+venv
+env
+.idea
+__pycache__
+ipecac.egg-info
+.pytest_cache
+build
+dist

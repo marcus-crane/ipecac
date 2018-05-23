@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "method": "get",
+    "path": "/incidents/"
+  },
+  "body": {
+    "description": "Get some stuff about incidents"
+  }
+}

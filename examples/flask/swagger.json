@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My cool flask project"
+  },
+  "servers": [
+    {
+      "url": "http://example.com",
+      "description": "The production server for my cool flask app"
+    }
+  ],
+  "paths": {
+    "/images/<image_name>": {
+      "get": {
+        "description": "Load an image stored on the server",
+        "tags": [
+          "api"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully fetched an image"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete an image from the server",
+        "tags": [
+          "api"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "description": "The ID of an image to delete",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Successfully deleted an image"
+          }
+        }
+      }
+    },
+    "/upload": {
+      "post": {
+        "description": "This endpoint is for uploading images",
+        "tags": [
+          "api"
+        ],
+        "responses": {
+          "201": {
+            "description": "Successfully uploaded an image"
+          },
+          "405": {
+            "description": "That method was not recognised"
+          }
+        }
+      }
+    }
+  }
+}

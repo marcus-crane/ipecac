@@ -1,0 +1,16 @@
+atomicwrites==1.1.5
+attrs==18.1.0
+click==6.7
+coverage==5.0a1
+flake8==3.5.0
+invoke==1.0.0
+-e git+git@github.dev.xero.com:marcus/ipecac@9009d85d0d721524c4251a8193609853b2cb3e87#egg=ipecac
+mccabe==0.6.1
+more-itertools==4.2.0
+pluggy==0.6.0
+py==1.5.4
+pycodestyle==2.4.0
+pyflakes==2.0.0
+pytest==3.6.2
+PyYAML==4.2b4
+six==1.11.0

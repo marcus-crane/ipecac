@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  version: 2.1.3
+  title: Nice Microservices, Pal
+  description: A set of microservices
+  contact:
+    name: Services R' Us
+    url: https://nomonolith.cool/contact
+    email: contact@nomonolith.cool
+servers:
+  - url: https://nomonolith.cool
+    description: The production server for these cool services
+  - url: https://nomonolith-uat.cool
+    description: The UAT server for some cool services

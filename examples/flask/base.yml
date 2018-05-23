@@ -1,0 +1,7 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: My cool flask project
+servers:
+  - url: http://example.com
+    description: The production server for my cool flask app

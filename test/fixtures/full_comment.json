@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "method": "post",
+    "path": "/incidents/"
+  },
+  "body": {
+    "description": "a multiline description",
+    "parameters": [
+      {
+        "description": "wow",
+        "in": "query",
+        "name": "nice",
+        "schema": {
+          "type": "integer"
+        }
+      },
+      {
+        "description": "cool",
+        "in": "query",
+        "name": "great",
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Thing"
+            }
+          }
+        },
+        "description": "A success msg"
+      },
+      "400": {
+        "content": {
+          "text/plain": {
+            "schema": {
+              "$ref": "#/components/schemas/Test"
+            }
+          }
+        },
+        "description": "A failure msg"
+      }
+    }
+  }
+}
